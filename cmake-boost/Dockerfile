@@ -13,6 +13,7 @@ RUN apt-get update \
     libboost1.55-all-dev \
     g++ \
     cpputest \
+    google-mock \
     vim \
 && rm -rf /var/lib/apt/lists/*
 
@@ -25,11 +26,11 @@ RUN ./bootstrap \
     && make install
 
 # install gmock
-RUN git clone https://github.com/google/googletest.git
-WORKDIR googletest
-RUN mkdir build
-WORKDIR build
-RUN cmake .. && make && make install
+#RUN git clone https://github.com/google/googletest.git
+#WORKDIR googletest
+#RUN mkdir build
+#WORKDIR build
+#RUN cmake .. && make && make install
 
 ENTRYPOINT /bin/bash
 
