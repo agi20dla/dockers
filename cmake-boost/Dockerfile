@@ -10,7 +10,7 @@ RUN apt-get update \
     automake \
     git \
     curl \
-    libboost-all-dev \
+    libboost1.55-all-dev \
     g++ \
     cpputest \
     vim \
