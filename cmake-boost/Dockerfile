@@ -12,6 +12,7 @@ RUN apt-get update \
     curl \
     libboost-all-dev \
     g++ \
+    cpputest \
     vim \
 && rm -rf /var/lib/apt/lists/*
 
